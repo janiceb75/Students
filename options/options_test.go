@@ -19,3 +19,16 @@ func TestFullName(t *testing.T) {
 	}
 
 }
+
+func TestStudentAge(t *testing.T) {
+	a := options.Student{
+		Age: 48,
+	}
+
+	studentAge := a.Age
+	want := 46
+	if studentAge != want {
+		t.Error("Test failed. I wanted", want, "Got", studentAge)
+	}
+
+}

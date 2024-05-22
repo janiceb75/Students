@@ -20,6 +20,11 @@ func (s Student) FullName() string {
 
 }
 
+func (a Student) StudentAge() int {
+	return a.Age
+
+}
+
 // Choice func asks for choice number and presents code for each option
 func Choice() {
 	var choice int
